@@ -1,0 +1,434 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* content */
+.item {
+    background-color: #FC683E;
+}
+/* container */
+
+.container {
+display: grid;
+
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-areas: "hero-1 hero-1 hero-2 hero-2"
+                              "skill-1 skill-1 skill-2 skill-2"
+                             "work-1 work-2 work-3 work-4"
+                             "experience-1 experience-1 experience-2 experience-2"
+                             "eaducation-1 eaducation-1 eaducation-2 eaducation-2"
+                             "contact-1 contact-1 contact-2 contact-2"
+                             " map map map map"
+                             "footer footer footer footer"
+                                  
+}
+.container-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.hero-1 {
+    grid-area: hero-1;
+}
+.hero-2 {
+    grid-area: hero-2;
+}
+.skill-1 {
+    grid-area: skill-1;
+}
+.skill-2 {
+    grid-area: skill-2;
+}
+.work-1 {
+ grid-area: work-1;
+}
+.work-2 {
+    grid-area: work-2;
+}
+.work-3 {
+    grid-area: work-3;
+}
+.work-4 {
+    grid-area: work-4;
+}
+
+.experiences-1 {
+    grid-area: experience-1;
+}
+.experiences-2 {
+    grid-area: experience-2;
+}
+.eaducation-1 {
+    grid-area: eaducation-1;
+}
+.eaducation-2 {
+    grid-area: eaducation-2;
+}
+.contact-1 {
+    grid-area: contact-1;
+}
+.contact-2 {
+    grid-area: contact-2;
+}
+.map {
+    grid-area: map;
+}
+.footer {
+    grid-area: footer;
+}
+.footer {
+    grid-area: footer;
+}
+/* General */
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Inconsolata', monospace;
+    line-height: 1.5;
+
+}
+.padding {
+    padding: 2rem 5rem;
+}
+a {
+ text-decoration: none;
+}
+.width-full {
+    width: 100%;
+    height: 100%;
+    background-size:contain;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+.flex-50 {
+    flex: 0 1 50%;
+}
+.padding-bottom {
+    padding-bottom: 1rem;
+}
+.content-padding {
+    padding: 3rem 0 2rem 0;
+}
+.subheading {
+    display: block;
+    font-weight: 300;
+    font-size: 1rem;
+     color: white;
+}
+.para {
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 200;
+}
+.justify {
+    justify-content: start;
+}
+.align {
+    align-items: center;
+}
+
+/* hero-first */
+.hero-1 {
+    background-image: url(../assets/media/home-img.jpg);
+    background-size: cover;
+    height:100vh;
+}
+.hero-1 h1 {
+ font-size: 1.5rem;
+ 
+ 
+}
+.hero-1 a {
+    font-size: 1.5rem;
+    color: black;
+   }
+
+/* Hero-second */
+.hero-2 {
+    background-color: #F5E3D7;
+}
+.hero-2 a {
+    color: #7A7876;
+    font-weight: 600;
+}
+.hero-2 .active {
+    color: #EDB359;
+}
+.hero-2 span {
+    display: inline-block;
+    color: #A3A1A0;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin-top: 6rem;
+}
+.hero-2 p {
+    color: #A3A1A0;
+    margin-bottom: 3rem;
+}
+.hero-2 h2 {
+font-size: 1.8rem;
+font-weight: 300;
+margin: 1rem 0;
+}
+.hero-2 strong {
+    font-weight: 500;
+}
+.hero-2 .btn {
+    display: inline-block;
+    padding: 0.7rem 2.4rem;
+    border: 4px solid black;
+    border-radius: 3rem;
+    color: black;
+
+}
+/* Skill-1 */
+.skill-1 {
+    background-color: white;
+    height: 50vh;
+}
+.skill-1 h3 {
+    font-size: 2.2rem;
+    color: black;
+}
+ .active {
+    display: inline-block;
+    color: #EFBB69;
+  
+}
+.skill-1 p {
+    color: #ACACAC;
+   padding: 0.5rem 0;
+}
+/* Skill-2 */
+.skill-2 {
+    background-color: #ECAF4E;
+   
+}
+h3 {
+    font-size: 2.5rem;
+    color: white;
+}
+.flex-50 span {
+    
+    
+}
+.progress {
+    background-color: white;
+    width: 90%;
+}
+.skill-percent {
+    background-color: black;
+    height:2px;
+   
+}
+.first {
+    width:90%;
+}
+.second {
+    width:70%;
+}
+.last {
+    width: 80%;
+}
+.skill-2 h4 {
+   
+}
+.flex-50 .percentage {
+    color: black;
+    font-weight: 600;
+}
+.percentage span {
+    color: black;
+    font-weight: 600;
+}
+.skill-content {
+    padding: 1.5rem;
+}
+/* Work */
+.work {
+    height: 50vh;
+    text-align: center;
+    padding:2rem;
+    color: white;
+}
+.work h4 {
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+.work i {
+    font-size: 2rem;
+    color: white;
+    padding:2rem 0;
+}
+.work-1 {
+    background-color: #ECAF4E;
+} 
+/* work-2 */
+.work-2 {
+    background-color: #FC683E;
+}
+.work-3 {
+    background-color: black;
+}
+.work-4 {
+    color: black;
+    background-color: white;
+}
+.work-4 i {
+    color: black;
+}
+/* Experiences */
+
+.experiences-2 {
+    padding: 3rem;
+    background-color: #FC683E;
+}
+
+.icon-color {
+    color: white;
+    font-size: 2rem;
+}
+h5 {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 300;
+   
+    
+}
+.date {
+    font-size: 1rem;
+    
+    font-weight: 800;
+}
+.experience-date {
+    color: #713234;
+}
+/* Eaducation */
+.eaducation-1 {
+    background-color: #ECAF4E;
+    padding: 3rem;
+}
+.eaducation-date {
+    color: #8C710D;
+}
+/* contact */
+.contact-1 {
+    padding: 3rem;
+    background-color: #FC683E;
+}
+.input {
+    border: none;
+    background-color: transparent;
+    color: white;
+    display: block;
+    width: 90%;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    border-bottom: 1px solid #ECAF4E;
+}
+.form-control {
+
+}
+::placeholder { 
+    color: #FDAC95;
+    opacity: 1; 
+   
+  }
+
+.contact-2 {
+    background-color: black;
+    color: #666666;
+}
+.contact-2 h6 {
+ font-size: 1.5rem;
+ color: white;
+}
+.contact-2 h4 {
+ color: white;
+ font-size: 1.4rem;
+ padding: 1rem 0 4rem 0;
+}
+.contact-2 i {
+    font-size: 1rem;
+    padding-bottom: 1.5rem;
+    
+    
+}
+.mail,.website {
+    color: #AD823D;
+}
+
+/* map */
+.map {
+   padding: 2rem 10rem; 
+}
+.location {
+    background-color: #FC683E
+}
+/* Footer */
+.footer {
+    background-color: #FFFFFF;
+    height: 30vh;
+    font-size: 1.2rem;
+    color: #A9A9A9;
+  text-align: center;
+  margin-top: 6rem;
+}
+.footer i {
+    margin-right: 2rem;
+    margin-top: 2rem;
+}
+@media screen and (max-width:768px){
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        grid-auto-rows: 200px;
+        gap: 3rem;        
+}
+}
